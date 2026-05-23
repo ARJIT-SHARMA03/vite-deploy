@@ -22,7 +22,7 @@ jobs:
           node-cache: 'npm'
 
       - name: Install Dependencies
-        run: npm ci # Cleaner, deterministic install for production environments
+        run: npm install # Cleaner, deterministic install for production environments
 
       - name: Build Application
         run: npm run build
